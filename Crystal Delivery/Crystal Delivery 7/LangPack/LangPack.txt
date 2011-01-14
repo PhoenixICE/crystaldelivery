@@ -1,0 +1,98 @@
+Program
+Delivery Mode
+Send To Tray
+Exit
+Report
+Schedule
+Copy
+Delete
+Export
+View
+Print
+Tools
+SMTP Server
+Backup Report List
+Restore Report List
+Auto Delivery on Start
+Send to Tray on Start
+Start with Windows
+Load Language Pack
+Hide All Buttons
+Visible Buttons
+Export Interval (Minutes)
+Help
+Contents
+About
+Report Description
+Export Interval
+Valid Export Days
+Valid Export Time
+Last Export
+Schedule Settings
+Schedule
+Source Report
+Export Interval
+Unit
+Value
+Export Time Envelope
+Start
+End
+Run History
+Date
+Time
+Export Days
+M - F
+All Days
+Clear All
+Parameters
+Default Values
+Dynamic Values
+Type
+Offset Value
+Date
+Time
+Boolean
+True
+False
+Value Start
+Value End
+Name
+Start
+End (Range Parameter)
+Connections
+Restore Defaults
+Database Name
+Server Name
+User ID
+Password
+Export Directory
+Select Folder
+Delete Folder
+Export Directories
+Email File
+Export Printer
+Printers Available
+Copies
+Orientation
+Collate
+Export Email
+Save Template
+Load Template
+From
+To
+CC
+BCC
+Subject
+Test Command Line
+Save Command Line
+Copy to Clipboard
+Address Book
+Import Address Book
+Append Address Book
+Export Address Book
+First Name
+Last Name
+Company
+Address
+Crystal Delivery Viewer
+Restore
