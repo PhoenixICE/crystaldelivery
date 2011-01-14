@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CAAAB1C3-0C5E-4FDA-BB77-5E4B253FE106}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CrystalDelivery.My.MyApplication</StartupObject>
+    <RootNamespace>CrystalDelivery</RootNamespace>
+    <AssemblyName>Crystal Delivery</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>Main.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>8.3.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Crystal Delivery.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Crystal Delivery.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.5.3700.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions.CrystalReports.Engine" />
+    <Import Include="CrystalDecisions.Shared" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddressBook.Designer.vb">
+      <DependentUpon>frmAddressBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddressBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendar.Designer.vb">
+      <DependentUpon>frmCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogViewer.Designer.vb">
+      <DependentUpon>frmLogViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMailSetup.Designer.vb">
+      <DependentUpon>frmMailSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMailSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReplace.designer.vb">
+      <DependentUpon>frmReplace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReplace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportViewer.Designer.vb">
+      <DependentUpon>frmReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modDynamicConvert.vb" />
+    <Compile Include="modEncrypt.vb" />
+    <Compile Include="modErrorWriter.vb" />
+    <Compile Include="modFileFolder.vb" />
+    <Compile Include="modGlobals.vb" />
+    <Compile Include="modInitiateReport.vb" />
+    <Compile Include="modISO.vb" />
+    <Compile Include="modRandomNumber.vb" />
+    <Compile Include="modCreateBatchFile.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddressBook.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddressBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogViewer.resx">
+      <DependentUpon>frmLogViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMailSetup.resx">
+      <DependentUpon>frmMailSetup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <LastGenOutput>frmMain1.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReplace.resx">
+      <DependentUpon>frmReplace.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.ico" />
+    <Content Include="Resources\1day.png" />
+    <Content Include="Resources\About.ico" />
+    <Content Include="Resources\About.png" />
+    <Content Include="Resources\agenda.png" />
+    <Content Include="Resources\arrow.png" />
+    <Content Include="Resources\arrow2.png" />
+    <None Include="Resources\arrow21.png" />
+    <Content Include="Resources\arrow3.png" />
+    <Content Include="Resources\arrowshapes.notched-right-arrow.png" />
+    <Content Include="Resources\Backup.png" />
+    <Content Include="Resources\basicshapes.octagon.png" />
+    <Content Include="Resources\Calendar.png" />
+    <Content Include="Resources\CD.ico" />
+    <Content Include="Resources\CD7.jpg" />
+    <Content Include="Resources\CD7.png" />
+    <Content Include="Resources\CD7b.png" />
+    <Content Include="Resources\CD7c.png" />
+    <Content Include="Resources\Configure.ico" />
+    <Content Include="Resources\Configure.png" />
+    <Content Include="Resources\Copy of Main.png" />
+    <Content Include="Resources\Copy of Start.png" />
+    <Content Include="Resources\Copy.ico" />
+    <Content Include="Resources\Copy.png" />
+    <Content Include="Resources\CRMain.png" />
+    <Content Include="Resources\CrystalReports.ico" />
+    <Content Include="Resources\CrystalReports.png" />
+    <Content Include="Resources\Custom.ico" />
+    <Content Include="Resources\Custom.png" />
+    <Content Include="Resources\Delete.ico" />
+    <Content Include="Resources\Delete.png" />
+    <Content Include="Resources\Desktop.png" />
+    <Content Include="Resources\Email.ico" />
+    <Content Include="Resources\Email.png" />
+    <Content Include="Resources\Exit.ico" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\Export.ico" />
+    <Content Include="Resources\Export.png" />
+    <Content Include="Resources\fileimport.png" />
+    <Content Include="Resources\Folder.ico" />
+    <Content Include="Resources\Forum.ico" />
+    <Content Include="Resources\Forum.png" />
+    <Content Include="Resources\Go.png" />
+    <Content Include="Resources\Help.ico" />
+    <Content Include="Resources\help.png" />
+    <Content Include="Resources\Lock.ico" />
+    <Content Include="Resources\Lock.png" />
+    <Content Include="Resources\Main.ico" />
+    <Content Include="Resources\Main.png" />
+    <Content Include="Resources\MainSmall.png" />
+    <Content Include="Resources\NameGen.png" />
+    <Content Include="Resources\Print.ico" />
+    <Content Include="Resources\Print.png" />
+    <Content Include="Resources\PrinterLocal.ico" />
+    <Content Include="Resources\PrinterNetwork.ico" />
+    <Content Include="Resources\Replace.ico" />
+    <Content Include="Resources\Replace.png" />
+    <Content Include="Resources\Restore.png" />
+    <Content Include="Resources\Schedule.ico" />
+    <Content Include="Resources\Schedule.png" />
+    <Content Include="Resources\Start.ico" />
+    <Content Include="Resources\Start.png" />
+    <Content Include="Resources\StartSmall.ico" />
+    <Content Include="Resources\StartSmall.png" />
+    <Content Include="Resources\Stop.ico" />
+    <Content Include="Resources\Stop.png" />
+    <Content Include="Resources\Stop2.png" />
+    <Content Include="Resources\StopSmall.ico" />
+    <Content Include="Resources\StopSmall.png" />
+    <Content Include="Resources\ToTray.png" />
+    <Content Include="Resources\Tray.ico" />
+    <Content Include="Resources\Tray.png" />
+    <Content Include="Resources\Unlock.ico" />
+    <Content Include="Resources\Unlock.png" />
+    <Content Include="Resources\View.ico" />
+    <Content Include="Resources\View.png" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\NotifyIcon1.Icon.ico" />
+    <None Include="Resources\cmbShowCalendar.Image.png" />
+    <None Include="Resources\Button1.Image.png" />
+    <None Include="Resources\%24this.Icon.ico" />
+    <None Include="Resources\LogoPictureBox.Image.png" />
+    <None Include="Resources\LogoPictureBox.ErrorImage.png" />
+    <None Include="Resources\tsbView.Image.png" />
+    <None Include="Resources\tsbToTray.Image.png" />
+    <None Include="Resources\tsbSchedule.Image.png" />
+    <None Include="Resources\tsbPrint.Image.png" />
+    <None Include="Resources\tsbExport.Image.png" />
+    <None Include="Resources\tsbDelete.Image.png" />
+    <None Include="Resources\tsbCopy.Image.png" />
+    <None Include="Resources\tsbAutoDeliver.Image.png" />
+    <None Include="Resources\ToolStripStatusLabel1.Image.png" />
+    <None Include="Resources\SendToTrayToolStripMenuItem1.Image.png" />
+    <None Include="Resources\SendToTrayToolStripMenuItem.Image.png" />
+    <None Include="Resources\ScheduleToolStripMenuItem.Image.png" />
+    <None Include="Resources\RestoreToolStripMenuItem.Image.png" />
+    <None Include="Resources\ReplaceStringToolStripMenuItem.Image.png" />
+    <None Include="Resources\PrintToolStripMenuItem.Image.png" />
+    <None Include="Resources\ExportToolStripMenuItem.Image.png" />
+    <None Include="Resources\ExitToolStripMenuItem.Image.png" />
+    <None Include="Resources\DeliveryModeToolStripMenuItem.Image.png" />
+    <None Include="Resources\DeleteToolStripMenuItem.Image.png" />
+    <None Include="Resources\ContentsToolStripMenuItem.Image.png" />
+    <None Include="Resources\ViewToolStripMenuItem.Image.png" />
+    <None Include="Resources\tsmView.Image.png" />
+    <None Include="Resources\tsmSMTPServer.Image.png" />
+    <None Include="Resources\tsmDelete.Image.png" />
+    <None Include="Resources\tsmCopy.Image.png" />
+    <None Include="Resources\tsmAutoDeliver.Image.png" />
+    <None Include="Resources\tsmSchedule.Image.png" />
+    <None Include="Resources\tsmRestore.Image.png" />
+    <None Include="Resources\tsmPrint.Image.png" />
+    <None Include="Resources\tsmExport.Image.png" />
+    <None Include="Resources\tsmExit.Image.png" />
+    <None Include="Resources\BackupToolStripMenuItem.Image.png" />
+    <None Include="Resources\AutoToolStripMenuItem.Image.png" />
+    <None Include="Resources\CopyToolStripMenuItem.Image.png" />
+    <None Include="Resources\AboutToolStripMenuItem.Image.png" />
+    <None Include="My Project\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
